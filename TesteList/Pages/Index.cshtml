@@ -1,10 +1,32 @@
 ﻿@page
-@model IndexModel
+@model IEnumerable<TesteList.Application.ViewModels.ProdutoViewModel>
 @{
-    ViewData["Title"] = "Home page";
+    ViewBag.Title = "Produtos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Produtos</h2>
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Código SUSEP</th>
+            <th>Nome</th>
+            <th>Data Início Vigência</th>
+            <th>Data Fim Vigência</th>
+            <th>Ativo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model)
+        {
+            <tr>
+                <td>@produto.CodigoSUSEP</td>
+                <td>@produto.Nome</td>
+                <td>@produto.DataInicioVigencia.ToShortDateString()</td>
+                <td>@produto.DataFimVigencia.ToShortDateString()</td>
+                <td>@(produto.Ativo ? "Sim" : "Não")</td>
+                <td><a href="@Url.Action("ListarCoberturas", "Produto", new { id = produto.Id })" class="waves-effect waves-light btn">Coberturas</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

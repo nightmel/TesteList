@@ -1,0 +1,37 @@
+﻿@page
+@model IEnumerable<TesteList.Application.ViewModels.CoberturaViewModel>
+@{
+    ViewBag.Title = "Coberturas";
+}
+
+<h2>Coberturas</h2>
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Capital Segurado</th>
+            <th>Prêmio</th>
+            <th>Faixa Etária</th>
+            <th>Cobertura Morte</th>
+            <th>Cobertura Invalidez</th>
+            <th>Cobertura Doenças Graves</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cobertura in Model)
+        {
+            <tr>
+                <td>@cobertura.Nome</td>
+                <td>@cobertura.Descricao</td>
+                <td>@cobertura.CapitalSegurado.ToString("C")</td>
+                <td>@cobertura.Premio.ToString("C")</td>
+                <td>@cobertura.FaixaEtaria</td>
+                <td>@(cobertura.CoberturaMorte ? "Sim" : "Não")</td>
+                <td>@(cobertura.CoberturaInvalidez ? "Sim" : "Não")</td>
+                <td>@(cobertura.CoberturaDoencasGraves ? "Sim" : "Não")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
