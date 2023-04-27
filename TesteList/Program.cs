@@ -1,7 +1,16 @@
+using TesteList.Infrastructure;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Add Infrastructure services.
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddInfrastructureServices(connectionString);
 
 var app = builder.Build();
 
