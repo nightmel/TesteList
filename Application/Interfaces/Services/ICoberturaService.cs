@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using TesteList.Application.ViewModels;
+﻿
 
+using Application.Interfaces.Models;
 
-namespace TesteList.Application.Services
+namespace Application.Interfaces.Services
 {
     public interface ICoberturaService
     {

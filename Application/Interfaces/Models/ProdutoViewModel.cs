@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TesteList.Application.ViewModels
+﻿namespace Application.Interfaces.Models
 {
     public class ProdutoViewModel
     {

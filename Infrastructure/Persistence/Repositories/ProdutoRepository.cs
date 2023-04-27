@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using TesteList.Domain.Entities;
-using TesteList.Domain.Repositories;
-using TesteList.Infrastructure.Data;
+﻿
+using Application.Interfaces.Repositories;
+using Domain.Entities;
 
-namespace TesteList.Infrastructure.Repositories
+namespace Infrastructure.Persistence.Repositories
 {
     public class ProdutoRepository : IProdutoRepository
     {

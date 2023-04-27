@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using TesteList.Domain.Entities;
+﻿using Domain.Entities;
 
-namespace TesteList.Domain.Repositories
+namespace Application.Interfaces.Repositories
 {
     public interface ICoberturaRepository
     {

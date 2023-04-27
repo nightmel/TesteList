@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using Application.Interfaces.Models;
+using Application.Interfaces.Repositories;
+using Application.Interfaces.Services;
 using AutoMapper;
-using TesteList.Application.ViewModels;
-using TesteList.Domain.Entities;
-using TesteList.Domain.Repositories;
+using Domain.Entities;
 
-namespace TesteList.Application.Services
+namespace Infrastructure.Services
 {
     public class CoberturaService : ICoberturaService
     {

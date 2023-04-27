@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace TesteList.Domain.Entities
+﻿namespace Application.Interfaces.Models
 {
-    public class Cobertura
+    public class CoberturaViewModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -13,9 +11,6 @@ namespace TesteList.Domain.Entities
         public bool CoberturaMorte { get; set; }
         public bool CoberturaInvalidez { get; set; }
         public bool CoberturaDoencasGraves { get; set; }
-
-        // Chave estrangeira para a entidade Produto
         public int ProdutoId { get; set; }
-        public virtual Produto Produto { get; set; }
     }
 }

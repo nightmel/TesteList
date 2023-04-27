@@ -1,9 +1,8 @@
-﻿using TesteList.Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 
-namespace TesteList.Infrastructure.Data
+
+namespace Infrastructure.Persistence
 {
     public class ApplicationDbContext : DbContext
     {

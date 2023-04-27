@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TesteList.Domain.Entities
+﻿namespace Domain.Entities
 {
     public class Produto
     {

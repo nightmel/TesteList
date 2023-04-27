@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using TesteList.Application.Services;
 using TesteList.Application.ViewModels;
 
-namespace ListarCoberturas.Pages
+namespace Web.Pages
 {
     public class IndexModel : PageModel
     {

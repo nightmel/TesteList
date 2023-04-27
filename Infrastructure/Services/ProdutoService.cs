@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Application.Interfaces.Models;
+using Application.Interfaces.Repositories;
+using Application.Interfaces.Services;
 using AutoMapper;
-using TesteList.Application.Services;
-using TesteList.Application.ViewModels;
-using TesteList.Domain.Entities;
-using TesteList.Domain.Repositories;
 
-namespace TesteList.Application.Services
+namespace Infrastructure.Services
 {
     public class ProdutoService : IProdutoService
     {

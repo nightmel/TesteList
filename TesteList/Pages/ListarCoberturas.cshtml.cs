@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using TesteList.Application.Services;
 using TesteList.Application.ViewModels;
 
-namespace TesteList.Pages
+namespace Web.Pages
 {
     public class ListarCoberturasModel : PageModel
     {

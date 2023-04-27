@@ -1,11 +1,13 @@
-﻿using TesteList.Application.Services;
-using TesteList.Infrastructure.Repositories;
+﻿using Application.Interfaces.Repositories;
+using Application.Interfaces.Services;
+using Infrastructure.Persistence;
+using Infrastructure.Persistence.Repositories;
+using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using TesteList.Infrastructure.Data;
-using TesteList.Domain.Repositories;
 
-namespace TesteList.Infrastructure
+
+namespace Infrastructure
 {
     public static class ConfigureServices
     {
