@@ -13,7 +13,7 @@ namespace Infrastructure
         public static void AddInfrastructureServices(this IServiceCollection services, string connectionString)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(connectionString, b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+                options.UseSqlite(connectionString));
 
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<ICoberturaRepository, CoberturaRepository>();

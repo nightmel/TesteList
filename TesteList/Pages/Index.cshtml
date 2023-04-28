@@ -1,10 +1,22 @@
 ﻿@page
-@model IEnumerable<Application.Interfaces.Models.ProdutoViewModel>
+@model Web.Pages.IndexModel
 @{
     ViewBag.Title = "Produtos";
 }
 
-<h2>Produtos</h2>
+
+<div class="d-flex align-items-center">
+    <h2>Produtos</h2>
+    <div class="dropdown ml-2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Adicionar Produto</a>
+        </div>
+    </div>
+</div>
+
 <table class="striped">
     <thead>
         <tr>
@@ -17,7 +29,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var produto in Model)
+        @foreach (var produto in Model.Produtos)
         {
             <tr>
                 <td>@produto.CodigoSUSEP</td>

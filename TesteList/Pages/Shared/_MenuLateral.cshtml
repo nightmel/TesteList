@@ -1,0 +1,18 @@
+﻿@page
+@model Web.Pages.Shared._MenuLateralModel
+@{
+}
+
+
+<aside class="sidebar">
+    <nav class="nav flex-column">
+        @foreach (var menuItem in Model.MenuItems)
+        {
+            <li>
+                <a href="@menuItem.Url" class="list-group-item list-group-item-action">
+                    @menuItem.Name
+                </a>
+            </li>
+        }
+    </nav>
+</aside>

@@ -23,4 +23,5 @@ namespace Web.Pages
             Produtos = _produtoService.GetAll();
         }
     }
+
 }
