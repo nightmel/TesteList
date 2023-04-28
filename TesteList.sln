@@ -9,17 +9,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "TesteList\Web.csproj
 		{6B9BC03A-EB59-46F4-845A-7E1A07D0DAFF} = {6B9BC03A-EB59-46F4-845A-7E1A07D0DAFF}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{3318DF44-B965-49AF-B0F6-98F776BE131A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{3318DF44-B965-49AF-B0F6-98F776BE131A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{996FD879-0853-49F2-8F62-B41D0E710E76} = {996FD879-0853-49F2-8F62-B41D0E710E76}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{996FD879-0853-49F2-8F62-B41D0E710E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{996FD879-0853-49F2-8F62-B41D0E710E76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6B9BC03A-EB59-46F4-845A-7E1A07D0DAFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6B9BC03A-EB59-46F4-845A-7E1A07D0DAFF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{3318DF44-B965-49AF-B0F6-98F776BE131A} = {3318DF44-B965-49AF-B0F6-98F776BE131A}
 		{996FD879-0853-49F2-8F62-B41D0E710E76} = {996FD879-0853-49F2-8F62-B41D0E710E76}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{DB82C068-7D6C-42F2-8B86-FA44B0900260}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
 	EndProjectSection
 EndProject
 Global

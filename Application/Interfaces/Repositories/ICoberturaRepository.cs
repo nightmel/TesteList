@@ -4,7 +4,7 @@ namespace Application.Interfaces.Repositories
 {
     public interface ICoberturaRepository
     {
-        IEnumerable<Cobertura> GetAllByProdutoId(int produtoId);
+        IEnumerable<Cobertura> GetCoberturasByProdutoId(int produtoId);
         Cobertura GetById(int id);
         void Add(Cobertura cobertura);
         void Update(Cobertura cobertura);

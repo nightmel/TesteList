@@ -10,6 +10,9 @@ namespace Infrastructure.Persistence
             : base(options)
         {
         }
+        public ApplicationDbContext()
+        {
+        }
 
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Cobertura> Coberturas { get; set; }

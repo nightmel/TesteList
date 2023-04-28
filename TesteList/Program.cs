@@ -1,16 +1,19 @@
+using Application;
+using Infrastructure;
+using AutoMapper;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-
 // Add Application services.
 builder.Services.AddApplicationServices();
 
 // Add Infrastructure services.
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Infrastructure.AddInfrastructureServices(connectionString);
+builder.Services.AddInfrastructureServices(connectionString);
 
 var app = builder.Build();
 

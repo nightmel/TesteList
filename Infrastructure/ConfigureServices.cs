@@ -6,7 +6,6 @@ using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace Infrastructure
 {
     public static class ConfigureServices
@@ -14,7 +13,7 @@ namespace Infrastructure
         public static void AddInfrastructureServices(this IServiceCollection services, string connectionString)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(connectionString));
+                options.UseSqlite(connectionString, b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<ICoberturaRepository, CoberturaRepository>();

@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+using Application.Interfaces.Models;
+using Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
-using TesteList.Application.Services;
-using TesteList.Application.ViewModels;
+
 
 namespace Web.Pages
 {

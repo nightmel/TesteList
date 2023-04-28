@@ -1,0 +1,1 @@
+Add-Migration InitialCreate -Project Infrastructure -StartupProject Web

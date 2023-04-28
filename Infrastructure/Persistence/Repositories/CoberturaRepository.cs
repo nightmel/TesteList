@@ -25,7 +25,7 @@ namespace Infrastructure.Persistence.Repositories
             _context.SaveChanges();
         }
 
-        public IEnumerable<Cobertura> GetAllByProdutoId(int produtoId)
+        public IEnumerable<Cobertura> GetCoberturasByProdutoId(int produtoId)
         {
             return _context.Coberturas
                 .Where(c => c.ProdutoId == produtoId)

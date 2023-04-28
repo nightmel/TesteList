@@ -1,12 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
-namespace Application;
-
-public static class ConfigureServices
+namespace Application
 {
-    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    public static class ConfigureServices
     {
-        return services;
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(ProdutoProfile));
+            return services;
+        }
     }
 }
